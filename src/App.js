@@ -23,7 +23,7 @@ const state = proxy({
 function Shoe() {
   const ref = useRef()
   const snap = useProxy(state)
-  // Drei's useGLTF hook sets up draco automatically, that's how it differs from useLoader(GLTFLoader, url)
+  // Drei's useGLTF hook sdsasets up draco automatically, that's how it differs from useLoader(GLTFLoader, url)
   // { nodes, materials } are extras that come from useLoader, these do not exist in threejs/GLTFLoader
   // nodes is a named collection of meshes, materials a named collection of materials
   const { nodes, materials } = useGLTF("shoe-draco.glb")
