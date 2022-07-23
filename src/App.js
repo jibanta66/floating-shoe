@@ -4,7 +4,7 @@ import { ContactShadows, Environment, useGLTF, OrbitControls } from "drei"
 import { HexColorPicker } from "react-colorful"
 import { proxy, useProxy } from "valtio"
 
-// Using a Valtio state model to bridge reactivity between
+// Using a Valtios state model to bridge reactivity between
 // the canvas and the dom, both can write to it and/or react to it.
 const state = proxy({
   current: null,
